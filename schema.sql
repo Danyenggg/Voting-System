@@ -1,3 +1,0 @@
--- Already applied to your Supabase project "quick-vote". Kept here so you own a copy.
--- Set your own admin key (used to start new polls):
--- update public.app_config set value = 'choose-a-strong-password' where key = 'admin_key';
