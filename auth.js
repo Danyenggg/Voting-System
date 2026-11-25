@@ -13,11 +13,11 @@
 const Auth = (() => {
   // Where each role lands after login (relative to the site root)
   const ROLE_HOME = {
-    teacher: "admin/dashboard.html",
-    student: "student/dashboard.html",
+    teacher: "admin-dashboard.html",
+    student: "student-dashboard.html",
   };
 
-  // Pages inside folders set <body data-base="../"> so links still resolve.
+  // All files live in one folder, so the base path is empty.
   const base = () => document.body.dataset.base || "";
   const go = (path) => window.location.replace(base() + path);
 

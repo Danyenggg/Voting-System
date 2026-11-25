@@ -1,6 +1,6 @@
 /**
  * shell.js - common behaviour for protected pages.
- * Usage: <script src="../js/shell.js" data-role="teacher"></script>
+ * Usage: <script src="shell.js" data-role="teacher"></script>
  *
  * 1. Verifies the visitor is signed in AND has the required role (else redirects).
  * 2. Fills in the user's name / role / email from the `profiles` table.
