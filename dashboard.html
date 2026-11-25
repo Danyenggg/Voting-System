@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teacher dashboard - Classroom Voting System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="is-loading" data-base="../">
+  <header class="topbar">
+    <span class="brand">Classroom Voting System</span>
+    <div class="who">
+      <span id="user-name"></span>
+      <span class="chip" id="user-role"></span>
+      <button class="btn" id="signout" type="button">Sign out</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="card">
+      <h1>Teacher dashboard</h1>
+      <p>You are signed in. This page is only available to teacher accounts; the database confirmed your role.</p>
+      <dl class="kv">
+        <dt>Name</dt><dd id="account-name"></dd>
+        <dt>Email</dt><dd id="account-email"></dd>
+        <dt>Role</dt><dd id="account-role"></dd>
+      </dl>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/supabaseClient.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/shell.js" data-role="teacher"></script>
+</body>
+</html>
